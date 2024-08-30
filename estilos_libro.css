@@ -1,0 +1,389 @@
+body {
+    width: 100vw; 
+    height: 100vh; 
+    background-image: url('ingfnaf1.png');
+    background-size: cover;
+    background-position: center;
+    animation: animacion-imagenes 3.5s steps(1) infinite;
+    background-attachment: fixed;
+
+}
+
+
+
+
+@keyframes animacion-imagenes {
+    5% {
+        opacity: 1; 
+        background-image: url('ingfnaf1.png');
+    }
+    
+    30% {
+        opacity: 1; 
+        background-image: url('infnaf2.png');
+    }
+    
+    55% {
+        opacity: 1; 
+        background-image: url('ingfnaf3.png');
+    }
+    
+    80% {
+        opacity: 1;
+        background-image: url('infnaf2.png');
+
+    }
+    
+    100% {
+        opacity: 1; 
+        background-image: url('ingfnaf1.png');
+    }
+}
+
+
+
+
+@font-face {
+    font-family: 'MeltedMoster';
+    src: url(Melted\ Monster.ttf)
+    format('TrueType');
+    
+}
+
+
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.562); 
+    padding: 10px 0;
+    background-attachment: fixed;
+    width: 100vw;
+    top: 0;
+    font-family: 'MeltedMoster',sans-serif;
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #ccc4c4;
+    padding: 10px 15px;
+    display: block;
+    
+}
+
+.menu ul li a:hover {
+    background-color: rgba(245, 239, 239, 0.863); 
+    color: red;
+    cursor: pointer;
+    transform: scale(1.4);
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .menu {
+        display: none; 
+    }
+}
+
+
+
+
+
+
+
+/*---------------------------*/
+
+
+
+.medeplejable-toggle {
+    position: fixed;
+    top: 5px;
+    right: 20px;
+    z-index: 1000;
+}
+
+
+.medeplejable-toggle input[type="checkbox"] {
+    display: none;
+}
+
+
+.medeplejable-icon {
+    display: none; 
+    cursor: pointer;
+}
+
+.medeplejable-icon img {
+    width: 60px; 
+    height: auto;
+    border-radius: 50%; 
+    border: 2px solid #dfdfdf; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease;
+}
+
+.medeplejable-icon:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.medeplejable {
+    display: none; 
+    position: absolute;
+    top: 80px; 
+    right: 10px; 
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.medeplejable ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.medeplejable ul li {
+    margin-bottom: 10px;
+}
+
+.medeplejable ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.medeplejable ul li a:hover {
+    color: #ff0c0c;
+}
+
+
+@media (max-width: 768px) {
+    .medeplejable-toggle {
+        display: block; 
+    }
+
+    .medeplejable-icon {
+        display: inline-block; 
+    }
+
+    .medeplejable {
+        display: none;
+    }
+
+    .medeplejable-toggle input[type="checkbox"]:checked ~ .medeplejable {
+        display: block;
+    }
+
+    .medeplejable-toggle input[type="checkbox"]:checked + .medeplejable-icon img {
+        transform: rotate(90deg);
+    }
+}
+
+/*--------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------- */
+
+
+/*Imagen1*/
+.libreria {
+    max-width: 1200px;
+    margin: 80px auto; 
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+
+.titulo_principal {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.titulo_principal {
+    font-size: 48px;
+    margin: 0;
+    text-shadow: 0 0 10px rgb(255, 0, 0);
+    color: #c9bbbb;
+    padding: auto;
+    transition: transform 0.3s ease;
+}
+
+.titulo_principal:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    font-family: 'MeltedMoster';
+    color: #ff0c0c;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+
+
+
+.imagen_libro1,
+.imagen_libro2,
+.imagen_libro3,
+.imagen_libro4 { 
+    flex: 1 1 22%; 
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin: 0 10px;
+}
+
+.imagen_libro1 img,
+.imagen_libro2 img,
+.imagen_libro3 img,
+.imagen_libro4 img { 
+    width: 80%; 
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover */
+.imagen_libro1:hover,
+.imagen_libro2:hover,
+.imagen_libro3:hover,
+.imagen_libro4:hover {
+    transform: scale(1.2);
+}
+
+
+/*Segunda Seccion */
+
+.titulo_secundario {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px rgb(255, 0, 0);
+    color: #c9bbbb;
+    transition: transform 0.3s ease;
+}
+
+
+
+.titulo_secundario:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    font-family: 'MeltedMoster';
+    color: #ff0c0c;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .imagen_libro1,
+    .imagen_libro2,
+    .imagen_libro3,
+    .imagen_libro4 {
+        flex: 1 1 30%; 
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .imagen_libro1,
+    .imagen_libro2,
+    .imagen_libro3,
+    .imagen_libro4 {
+        flex: 1 1 45%; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .imagen_libro1,
+    .imagen_libro2,
+    .imagen_libro3,
+    .imagen_libro4 {
+        flex: 1 1 90%; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .libreria {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.container{
+    width: 80%;
+    height: 800px;
+    position: relative;
+    display: block;
+    margin: 90px  auto 0;
+    text-align: left;
+}

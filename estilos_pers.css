@@ -1,0 +1,241 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('Imgfreddy1.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #000; 
+    animation: animacion-imagenes 6s steps(1) infinite;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes animacion-imagenes {
+    0% { background-image: url('Imgfreddy1.jpeg'); }
+    15% { background-image: url('imgfreddy2.jpeg'); }
+    35% { background-image: url('Imgfreddy1.jpeg'); }
+    55% { background-image: url('imgfreddy2.jpeg'); }
+    75% { background-image: url('imgfreddy3.jpeg'); }
+    90% { background-image: url('imagfreddy5.jpeg'); }
+}
+
+@font-face {
+    font-family: 'MeltedMoster';
+    src: url(Melted\ Monster.ttf) format('truetype');
+}
+
+.menu {
+    background-color: rgb(0, 0, 0);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    font-family: 'MeltedMoster', sans-serif;
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menu ul li a:hover {
+    background-color: rgba(245, 239, 239, 0.863);
+    color: red;
+    cursor: pointer;
+    transform: scale(1.4);
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.medeplejable-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.medeplejable-toggle input[type="checkbox"] {
+    display: none;
+}
+
+.medeplejable-icon {
+    display: block;
+    cursor: pointer;
+}
+
+.medeplejable-icon img {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #dfdfdf;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.medeplejable-icon:hover {
+    transform: scale(1.2);
+}
+
+.medeplejable {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.medeplejable ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.medeplejable ul li {
+    margin-bottom: 10px;
+}
+
+.medeplejable ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.medeplejable ul li a:hover {
+    color: #ff0c0c;
+}
+
+@media (max-width: 768px) {
+    .medeplejable-toggle {
+        display: block;
+    }
+
+    .medeplejable {
+        display: none;
+    }
+
+    .medeplejable-toggle input[type="checkbox"]:checked ~ .medeplejable {
+        display: block;
+    }
+
+    .medeplejable-toggle input[type="checkbox"]:checked + .medeplejable-icon img {
+        transform: rotate(90deg);
+    }
+}
+
+
+.contenido {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto 50px auto; 
+    text-align: center;
+    width: 100%;
+    max-width: 1200px; 
+}
+
+
+.contenido .imagen, .contenido .texto {
+    flex: 1;
+    margin: 10px;
+}
+
+
+.imagen {
+    width: 100%; 
+    max-width: 400px; 
+    margin: 0;
+}
+
+.imagen img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+
+.texto {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 400px; 
+    margin: 0; 
+    text-align: left; 
+}
+
+
+.texto h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'MeltedMoster';
+}
+
+.texto p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+@media (max-width: 768px) {
+    .contenido {
+        flex-direction: column; 
+        margin-top: 60px; 
+    }
+
+    .imagen {
+        order: 1; 
+    }
+
+    .texto {
+        order: 2; 
+    }
+}

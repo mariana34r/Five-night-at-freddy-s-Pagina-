@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;  
+    background-image: url('imagenfreddy1.1.png');
+    background-size: cover;
+    background-position: center;
+    animation: animacion-imagenes 1.2s steps(1) infinite;
+    background-attachment: fixed;
+}
+
+@keyframes animacion-imagenes {
+    0% { background-image: url('imagenfreddy1.1.png'); }
+    10% { background-image: url('imagenfreddy1.1.png'); }
+    20% { background-image: url('imagenfreddy1.1.png'); }
+    30% { background-image: url('imagenfreddy1.1.png'); }
+    50% { background-image: url('imagenfreddy2.2.png'); }
+    60% { background-image: url('imagenfreddy2.2.png'); }
+    70% { background-image: url('imagenfreddy3.3.png'); }
+    80% { background-image: url('imagenfreddy4.4.png'); }
+    100% { background-image: url('imagenfreddy4.4.png'); }
+}
+
+@font-face {
+    font-family: 'MeltedMoster';
+    src: url(Melted\ Monster.ttf) format('TrueType');
+}
+
+@font-face {
+    font-family: 'HappySchool';
+    src: url(Happy\ School.ttf) format('TrueType');
+}
+
+
+@font-face {
+    font-family: 'MeltedMoster';
+    src: url(Melted\ Monster.ttf)
+    format('TrueType');
+    
+}
+
+a{
+    font-family: 'MeltedMoster';
+    color: #000000;
+    text-shadow: 0 0 10px rgb(255, 0, 0);
+    margin: 0;
+}
+
+a:hover {
+    color: #ff0c0c;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    text-decoration: none; 
+}
+
+
+header {
+    position: relative;
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.562); 
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; 
+    font-family: 'MeltedMoster', sans-serif;
+    font-size: 1.875rem;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0 0.625rem; 
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.625rem 1rem; 
+    display: block;
+}
+
+.menu ul li a:hover {
+    background-color: rgba(245, 239, 239, 0.863);
+    color: red;
+    transform: scale(1.2);
+}
+
+.medeplejable-toggle {
+    position: fixed;
+    top: 5px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.medeplejable-toggle input[type="checkbox"] {
+    display: none;
+}
+
+.medeplejable-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.medeplejable-icon img {
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid #dfdfdf;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.medeplejable-icon:hover img {
+    transform: scale(1.2);
+}
+
+.medeplejable {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.medeplejable ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.medeplejable ul li {
+    margin-bottom: 10px;
+}
+
+.medeplejable ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1rem; /* 16px */
+    transition: color 0.3s ease;
+}
+
+.medeplejable ul li a:hover {
+    color: #ff0c0c;
+}
+
+.imv img {
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    bottom: 38px;
+    right: 30px;
+    z-index: 1000;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.imv img:hover {
+    transform: scale(1.2);
+}
+
+
+.container1, .container2 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 90px auto;
+    background-color: rgba(223, 223, 223, 0.25);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container1 img, .container2 img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'MeltedMoster', sans-serif;
+    font-size: 2.5rem; 
+    color: #000000;
+    text-shadow: 0 0 10px rgb(255, 0, 0);
+    margin: 0;
+}
+
+h1:hover {
+    color: #ff0c0c;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+p, h4, h5 {
+    font-size: 1.875rem; 
+    padding-left: 50px;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    font-family: 'HappySchool', sans-serif;
+}
+
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .medeplejable-toggle {
+        display: block;
+    }
+
+    .medeplejable-icon {
+        display: inline-block;
+    }
+
+    .medeplejable {
+        display: none;
+    }
+
+    .medeplejable-toggle input[type="checkbox"]:checked ~ .medeplejable {
+        display: block;
+    }
+
+    .medeplejable-toggle input[type="checkbox"]:checked + .medeplejable-icon img {
+        transform: rotate(90deg);
+    }
+
+    .container1, .container2 {
+        width: 100%;
+        padding: 20px; 
+    }
+
+    h1 {
+        font-size: 2rem;
+        padding-left: 0;
+    }
+
+    p, h4, h5 {
+        font-size: 1.5rem; 
+        padding-left: 0;
+    }
+
+    .img_ffddyy {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto; 
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.75rem; 
+    }
+
+    p, h4, h5 {
+        font-size: 1.25rem; 
+    }
+}
+
+
+
+
+.video-container {
+    display: flex; 
+    justify-content: center; 
+    margin: 20px 0;
+}
+
+video {
+    max-width: 100%;
+    height: auto; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}

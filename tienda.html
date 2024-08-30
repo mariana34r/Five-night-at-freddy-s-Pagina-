@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fnafs</title>
+    <link rel="stylesheet" href="estilo_tienda.css">
+    <script src="tienda.js" defer></script>
+    <script src="buscar.js" defer></script>
+    
+    <link rel="icon" href="https://c3.klipartz.com/pngpicture/69/619/sticker-png-five-nights-at-freddy-039-s-freddy-shirt-design-illustration-of-brown-and-black-bear-thumbnail.png">
+</head>
+<body>
+<div>
+    <nav class="menu">
+        <ul>
+            <li><a href="inicio.html">Home</a></li>
+            <li><a href="juegos.html">Juegos</a></li>
+            <li><a href="libros.html">Libros</a></li>
+            <li><a href="personajes.html">Personajes</a></li>
+            <li><a href="Historia.html">Historia</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="medeplejable-toggle">
+    <input type="checkbox" id="toggle">
+    <label for="toggle" class="medeplejable-icon">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0MErU7o7rL6bEEOwcRC_Pgbe6SvzGsncXqNImxtpsDzGBPB3BfJ44kgiMQ1CtAe9V7O4&usqp=CAU" alt="Menú">
+    </label>
+    <div class="medeplejable">
+        <ul>
+            <li><a href="inicio.html">Home</a></li>
+            <li><a href="juegos.html">Juegos</a></li>
+            <li><a href="libros.html">Libros</a></li>
+            <li><a href="personajes.html">Personajes</a></li>
+            <li><a href="Historia.html">Historia</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="imv">
+    <a href="#" id="carrito-link">
+        <img src="https://e7.pngegg.com/pngimages/833/426/png-clipart-shopping-cart-shopping-cart.png" alt="Carrito de Compras">
+    </a>
+</div>
+
+
+<div class="container">
+
+    <h1 class="titulo_principal">Tienda Five Nights at Freddys&nbsp;</h1>
+
+  
+   <div class="filter-container" style="margin-top: 20px;">
+    <input type="text" id="search-input" placeholder="Buscar...">
+    <button type="button" id="search-button">Buscar</button>
+    
+    <label for="category-filter">Categoría:</label>
+    <select id="category-filter">
+        <option value="">Todas</option>
+        <option value="Peluches">Peluches</option>
+        <option value="Juguetes">Juguetes</option>
+    </select>
+</div>
+
+
+    
+
+
+    <div id="productos-container" class="contenedor-productos">
+
+      
+        <div class="libreria">
+            <div class="producto" data-categoria="Peluches">
+                <a href="https://store.steampowered.com/app/319510/Five_Nights_at_Freddys/?l=spanish" target="_blank">
+                    <img src="https://http2.mlstatic.com/D_Q_NP_2X_807976-MLU76655725534_062024-E.webp" alt="">
+                </a>
+                <div class="nombre">Chica <br> ★★★★</div>
+                <div class="precio">$9.99</div>
+                <button class="agregar-btn" onclick="agregarAlCarrito('Juego 1', 9.99, 'https://http2.mlstatic.com/D_Q_NP_2X_807976-MLU76655725534_062024-E.webp', 'Juegos')">Agregar al Carrito</button>
+            </div>
+            <div class="producto" data-categoria="Peluches">
+                <a href="https://store.steampowered.com/app/319510/Five_Nights_at_Freddys/?l=spanish" target="_blank">
+                    <img src="https://http2.mlstatic.com/D_Q_NP_2X_608804-MCO74884957652_032024-E.webp" alt="">
+                </a>
+                <div class="nombre">Foxy <br> ★★★★★</div>
+                <div class="precio">$14.99</div>
+                <button class="agregar-btn" onclick="agregarAlCarrito('Juego 2', 14.99, 'https://http2.mlstatic.com/D_Q_NP_2X_608804-MCO74884957652_032024-E.webp', 'Juegos')">Agregar al Carrito</button>
+            </div>
+            <div class="producto" data-categoria="Peluches">
+                <a href="https://store.steampowered.com/app/319510/Five_Nights_at_Freddys/?l=spanish" target="_blank">
+                    <img src="https://http2.mlstatic.com/D_Q_NP_2X_831045-MCO70221442197_062023-E.webp" alt="">
+                </a>
+                <div class="nombre">Glam Rock Freddy <br> ★★★★★</div>
+                <div class="precio">$19.99</div>
+                <button class="agregar-btn" onclick="agregarAlCarrito('Juego 3', 19.99, 'https://http2.mlstatic.com/D_Q_NP_2X_831045-MCO70221442197_062023-E.webp', 'Juegos')">Agregar al Carrito</button>
+            </div>
+            
+            <div class="producto" data-categoria="Peluches">
+                <a href="https://store.steampowered.com/app/319510/Five_Nights_at_Freddys/?l=spanish" target="_blank">
+                    <img src="https://http2.mlstatic.com/D_Q_NP_2X_766847-CBT52372801614_112022-E.webp" alt="">
+                </a>
+                <div class="nombre">Funtime Freddy <br> ★★★</div>
+                <div class="precio">$24.99</div>
+                <button class="agregar-btn" onclick="agregarAlCarrito('Juego 4', 24.99, 'https://http2.mlstatic.com/D_Q_NP_2X_766847-CBT52372801614_112022-E.webp', 'Juegos')">Agregar al Carrito</button>
+            </div>
+        </div>
+
+        <h2 class="titulo_secundario">Juguetes Fnafs</h2>
+
+        <div class="libreria">
+            <div class="producto" data-categoria="Juguetes">
+                <a href="https://store.steampowered.com/app/319510/Five_Nights_at_Freddys/?l=spanish" target="_blank">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_667441-MCO77764714629_072024-O.webp" alt="">
+                </a>
+                <div class="nombre">Figura de Freddy <br> ★★★★</div>
+                <div class="precio">$12.99</div>
+                <button class="agregar-btn" onclick="agregarAlCarrito('Juguete 1', 12.99, 'https://http2.mlstatic.com/D_NQ_NP_667441-MCO77764714629_072024-O.webp', 'Juguetes')">Agregar al Carrito</button>
+            </div>
+            <div class="producto" data-categoria="Juguetes">
+                <a href="https://store.steampowered.com/app/319510/Five_Nights_at_Freddys/?l=spanish" target="_blank">
+                    <img src="https://http2.mlstatic.com/D_Q_NP_2X_790495-MCO73913968064_012024-E.webp" alt="">
+                </a>
+                <div class="nombre">Figura de Bonny <br> ★★★★</div>
+                <div class="precio">$17.99</div>
+                <button class="agregar-btn" onclick="agregarAlCarrito('Juguete 2', 17.99, 'https://http2.mlstatic.com/D_Q_NP_2X_790495-MCO73913968064_012024-E.webp', 'Juguetes')">Agregar al Carrito</button>
+            </div>
+            <div class="producto" data-categoria="Juguetes">
+                <a href="https://store.steampowered.com/app/319510/Five_Nights_at_Freddys/?l=spanish" target="_blank">
+                    <img src="https://http2.mlstatic.com/D_Q_NP_2X_833032-CBT52334406097_112022-E.webp" alt="">
+                </a>
+                <div class="nombre">Figura de Ballora <br> ★★★★</div>
+                <div class="precio">$22.99</div>
+                <button class="agregar-btn" onclick="agregarAlCarrito('Juguete 3', 22.99, 'https://http2.mlstatic.com/D_Q_NP_2X_833032-CBT52334406097_112022-E.webp', 'Juguetes')">Agregar al Carrito</button>
+            </div>
+            <div class="producto" data-categoria="Juguetes">
+                <a href="https://store.steampowered.com/app/319510/Five_Nights_at_Freddys/?l=spanish" target="_blank">
+                    <img src="https://www.funkotienda.com/wp-content/uploads/2018/07/Funko-Pop-Five-Nights-at-Freddys-Withered-Bonnie-Exclusive.jpg" alt="">
+                </a>
+                <div class="nombre">Funkos pop Withered bonny <br> ★★★★★</div>
+                <div class="precio">$27.99</div>
+                <button class="agregar-btn" onclick="agregarAlCarrito('Juguete 4', 27.99, 'https://www.funkotienda.com/wp-content/uploads/2018/07/Funko-Pop-Five-Nights-at-Freddys-Withered-Bonnie-Exclusive.jpg', 'Juguetes')">Agregar al Carrito</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<div id="productos-carrito" class="carrito">
+    <h2>Carrito de Compras</h2>
+    <div id="productos-carrito-lista"></div>
+    <div id="total-carrito">Total: $0.00</div>
+</div>
+
+</body>
+</html>

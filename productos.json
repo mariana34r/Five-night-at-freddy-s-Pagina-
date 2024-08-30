@@ -1,0 +1,66 @@
+[
+    {
+        "id": "1",
+        "categoria": "Peluches",
+        "nombre": "Chica ★★★★",
+        "precio": 9.99,
+        "imagen": "https://http2.mlstatic.com/D_Q_NP_2X_807976-MLU76655725534_062024-E.webp",
+        "enlace": "https://store.steampowered.com/app/319510/Five_Nights_at_Freddys/?l=spanish"
+    },
+    {
+        "id": "2",
+        "categoria": "Peluches",
+        "nombre": "Foxy ★★★★★",
+        "precio": 14.99,
+        "imagen": "https://http2.mlstatic.com/D_Q_NP_2X_608804-MCO74884957652_032024-E.webp",
+        "enlace": "https://store.steampowered.com/app/319510/Five_Nights_at_Freddys/?l=spanish"
+    },
+    {
+        "id": "3",
+        "categoria": "Peluches",
+        "nombre": "Glam Rock Freddy ★★★★★",
+        "precio": 19.99,
+        "imagen": "https://http2.mlstatic.com/D_Q_NP_2X_831045-MCO70221442197_062023-E.webp",
+        "enlace": "https://store.steampowered.com/app/319510/Five_Nights_at_Freddys/?l=spanish"
+    },
+    {
+        "id": "4",
+        "categoria": "Peluches",
+        "nombre": "Funtime Freddy ★★★",
+        "precio": 24.99,
+        "imagen": "https://http2.mlstatic.com/D_Q_NP_2X_766847-CBT52372801614_112022-E.webp",
+        "enlace": "https://store.steampowered.com/app/319510/Five_Nights_at_Freddys/?l=spanish"
+    },
+    {
+        "id": "5",
+        "categoria": "Juguetes",
+        "nombre": "Figura de Freddy ★★★★",
+        "precio": 12.99,
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_667441-MCO77764714629_072024-O.webp",
+        "enlace": "https://store.steampowered.com/app/319510/Five_Nights_at_Freddys/?l=spanish"
+    },
+    {
+        "id": "6",
+        "categoria": "Juguetes",
+        "nombre": "Figura de Bonny ★★★★",
+        "precio": 17.99,
+        "imagen": "https://http2.mlstatic.com/D_Q_NP_2X_790495-MCO73913968064_012024-E.webp",
+        "enlace": "https://store.steampowered.com/app/319510/Five_Nights_at_Freddys/?l=spanish"
+    },
+    {
+        "id": "7",
+        "categoria": "Juguetes",
+        "nombre": "Figura de Ballora ★★★★",
+        "precio": 22.99,
+        "imagen": "https://http2.mlstatic.com/D_Q_NP_2X_833032-CBT52334406097_112022-E.webp",
+        "enlace": "https://store.steampowered.com/app/319510/Five_Nights_at_Freddys/?l=spanish"
+    },
+    {
+        "id": "8",
+        "categoria": "Juguetes",
+        "nombre": "Funkos pop Withered bonny ★★★★★",
+        "precio": 27.99,
+        "imagen": "https://www.funkotienda.com/wp-content/uploads/2018/07/Funko-Pop-Five-Nights-at-Freddys-Withered-Bonnie-Exclusive.jpg",
+        "enlace": "https://store.steampowered.com/app/319510/Five_Nights_at_Freddys/?l=spanish"
+    }
+]

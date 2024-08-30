@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://pa1.aminoapps.com/6798/937010d2ba576440a62fdc6f500199384384d1d7_hq.gif');
+    background-size: cover;
+    background-position: center;
+    width: 100%; 
+    height: 100vh; 
+}
