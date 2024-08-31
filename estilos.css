@@ -259,7 +259,7 @@ a:hover{
     transform: scale(1.4);
     font-family: 'MeltedMoster',sans-serif;
 }
-
+/* ----------------------------------------------- */
 
 @media (max-width: 768px) {
     .imagenText img {

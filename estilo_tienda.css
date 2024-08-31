@@ -16,6 +16,8 @@ body {
     height: 100%;
 }
 
+
+
 @keyframes animacion-imagenes{
     0% {
         background-image: url('imag_com1.webp');
