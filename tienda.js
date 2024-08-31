@@ -12,7 +12,7 @@ function agregarAlCarrito(nombre, precio, imagen, categoria) {
     actualizarCarrito();
     guardarCarritoEnLocalStorage();
     
-    // Ocultar mensaje de agradecimiento cuando se agregue un producto
+   
     const mensajeAgradecimiento = document.getElementById('mensaje-agradecimiento');
     if (mensajeAgradecimiento) {
         mensajeAgradecimiento.style.display = 'none';
