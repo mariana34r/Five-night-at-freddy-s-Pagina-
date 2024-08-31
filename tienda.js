@@ -11,8 +11,14 @@ function agregarAlCarrito(nombre, precio, imagen, categoria) {
     }
     actualizarCarrito();
     guardarCarritoEnLocalStorage();
+    
+    // Ocultar mensaje de agradecimiento cuando se agregue un producto
+    const mensajeAgradecimiento = document.getElementById('mensaje-agradecimiento');
+    if (mensajeAgradecimiento) {
+        mensajeAgradecimiento.style.display = 'none';
+    }
 }
-// para eliminar productos
+
 function eliminarDelCarrito(nombre) {
     carrito = carrito.filter(producto => producto.nombre !== nombre);
     actualizarCarrito();
@@ -35,6 +41,7 @@ function ajustarCantidad(nombre, ajuste) {
 function actualizarCarrito() {
     const productosCarrito = document.getElementById('productos-carrito-lista');
     const totalCarrito = document.getElementById('total-carrito');
+    const compararBtn = document.getElementById('comparar-btn');
     
     productosCarrito.innerHTML = '<button id="vaciar-carrito" onclick="vaciarCarrito()">Vaciar Carrito</button>';
     
@@ -59,10 +66,9 @@ function actualizarCarrito() {
         total += producto.precio * producto.cantidad;
     });
     
-    const totalDiv = document.createElement('div');
-    totalDiv.id = 'total-carrito';
-    totalDiv.textContent = `Total: $${total.toFixed(2)}`;
-    productosCarrito.appendChild(totalDiv);
+    totalCarrito.textContent = `Total: $${total.toFixed(2)}`;
+    
+    compararBtn.style.display = carrito.length > 0 ? 'block' : 'none';
 
     console.log('Estado del carrito:', carrito);
 }
@@ -73,7 +79,16 @@ function vaciarCarrito() {
     guardarCarritoEnLocalStorage();
 }
 
-//para guardar
+function compararCompra() {
+    const mensajeAgradecimiento = document.getElementById('mensaje-agradecimiento');
+    if (carrito.length > 0) {
+        mensajeAgradecimiento.style.display = 'block';
+        vaciarCarrito(); 
+    } else {
+        alert('El carrito está vacío.');
+    }
+}
+
 function guardarCarritoEnLocalStorage() {
     localStorage.setItem('carrito', JSON.stringify(carrito));
 }
@@ -85,7 +100,5 @@ document.getElementById('carrito-link').addEventListener('click', (event) => {
 });
 
 document.addEventListener('DOMContentLoaded', actualizarCarrito);
-
-
 
 
