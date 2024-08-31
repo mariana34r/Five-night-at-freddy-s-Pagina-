@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const categoryFilter = document.getElementById('category-filter');
     const productosContainer = document.getElementById('productos-container');
 
-    // funcion para el recoorer el json de los productos
+    // funcion para el recoorer el json de productos
     async function loadProducts() {
         const response = await fetch('productos.json');
         const productos = await response.json();

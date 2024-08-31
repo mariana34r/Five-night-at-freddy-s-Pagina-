@@ -12,7 +12,7 @@ function agregarAlCarrito(nombre, precio, imagen, categoria) {
     actualizarCarrito();
     guardarCarritoEnLocalStorage();
 }
-// para eleimnar productos
+// para eliminar productos
 function eliminarDelCarrito(nombre) {
     carrito = carrito.filter(producto => producto.nombre !== nombre);
     actualizarCarrito();
