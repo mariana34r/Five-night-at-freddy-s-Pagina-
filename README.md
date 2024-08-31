@@ -32,28 +32,35 @@ Esta Pagina está diseñada para que los fans de Fnaf puedan explorar y conocer 
 
 - **Pagina Historia**: Aquí se detallan los dos eventos más importantes de la historia de Fnaf.
 
+  **Pagina Tienda**: Aqui enocontraras produtos de el videojuegos fnaf.
+
 - **Pantallas pequeñas**: En pantallas pequeñas, el menú principal se convierte en un botón de menú para mejorar la navegación.
 
 
 
 ## Capturas de la Página 📷
 
-### Captura de la Seccion Home 🐻
+### Captura de la Seccion Home 🐻🎩
 ![Captura del Home](https://github.com/user-attachments/assets/65190762-5136-426c-bac7-fed620a77fde)
 
-### Captura de la Seccion Juegos
+### Captura de la Seccion Juegos 🐰🎸
 ![Captura del Home](https://github.com/user-attachments/assets/f77079ce-9e22-47a7-b810-aede1923f378)
 
 
-### Captura de la Seccion Libros
+### Captura de la Seccion Libros 🐥🍕
 ![Captura del Home](https://github.com/user-attachments/assets/cab2a09a-9a53-4a07-a744-4cc708fd1fd3)
 
 
-### Captura de la Seccion Personajes
+### Captura de la Seccion Personajes 🦊💀 
 ![Captura del Home](https://github.com/user-attachments/assets/4c1b4ebd-b57b-4176-8caf-58f84b30197f)
 
-### Captura de la Seccion Historia
+### Captura de la Seccion Historia 🐻✨
 ![Captura del Home](https://github.com/user-attachments/assets/19bfd768-8cdf-42d3-a8a9-148ce3dfb41b)
+
+### Captura de la Seccion Tienda 🍕🍕
+![Captura del Home](https://github.com/user-attachments/assets/1196234e-9362-44b3-a6f2-0986ab522102)
+
+
 
 ## Tecnologías Utilizadas 📱
 
