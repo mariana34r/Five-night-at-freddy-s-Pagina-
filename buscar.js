@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const categoryFilter = document.getElementById('category-filter');
     const productosContainer = document.getElementById('productos-container');
 
-    
+    // funcion para el recoorer el json
     async function loadProducts() {
         const response = await fetch('productos.json');
         const productos = await response.json();
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-  
+    
     function filterProducts() {
         const searchText = searchInput.value.toLowerCase();
         const selectedCategory = categoryFilter.value;

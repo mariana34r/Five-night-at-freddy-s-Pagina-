@@ -73,6 +73,7 @@ function vaciarCarrito() {
     guardarCarritoEnLocalStorage();
 }
 
+//para guardar
 function guardarCarritoEnLocalStorage() {
     localStorage.setItem('carrito', JSON.stringify(carrito));
 }
