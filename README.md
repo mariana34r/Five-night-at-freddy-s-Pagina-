@@ -36,8 +36,6 @@ Esta Pagina está diseñada para que los fans de Fnaf puedan explorar y conocer 
 
 - **Pantallas pequeñas**: En pantallas pequeñas, el menú principal se convierte en un botón de menú para mejorar la navegación.
 
-
-
 ## Capturas de la Página 📷
 
 ### Captura de la Seccion Home 🐻🎩
