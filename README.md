@@ -41,25 +41,27 @@ Esta Pagina está diseñada para que los fans de Fnaf puedan explorar y conocer 
 ## Capturas de la Página 📷
 
 ### Captura de la Seccion Home 🐻🎩
-![Captura del Home](https://github.com/user-attachments/assets/65190762-5136-426c-bac7-fed620a77fde)
+![image](https://github.com/user-attachments/assets/e4b1f89d-2c86-4295-8757-0bf13678a83d)
+
 
 ### Captura de la Seccion Juegos 🐰🎸
-![Captura del Home](https://github.com/user-attachments/assets/f77079ce-9e22-47a7-b810-aede1923f378)
+![image](https://github.com/user-attachments/assets/10fa86d2-cb12-4812-bff6-5cc17fb23fb6)
 
 
 ### Captura de la Seccion Libros 🐥🍕
-![Captura del Home](https://github.com/user-attachments/assets/cab2a09a-9a53-4a07-a744-4cc708fd1fd3)
+![image](https://github.com/user-attachments/assets/0645db0e-6d85-4b7f-aa11-4dccc19249ca)
 
 
 ### Captura de la Seccion Personajes 🦊💀 
-![Captura del Home](https://github.com/user-attachments/assets/4c1b4ebd-b57b-4176-8caf-58f84b30197f)
+![image](https://github.com/user-attachments/assets/d51b0c24-3251-4bce-8387-fe0cf0fc0d94)
+
 
 ### Captura de la Seccion Historia 🐻✨
-![Captura del Home](https://github.com/user-attachments/assets/19bfd768-8cdf-42d3-a8a9-148ce3dfb41b)
+![image](https://github.com/user-attachments/assets/8a079aa0-8d04-40c0-96c4-b48a9e713323)
+
 
 ### Captura de la Seccion Tienda 🍕🍕
-![Captura del Home](https://github.com/user-attachments/assets/1196234e-9362-44b3-a6f2-0986ab522102)
-
+![image](https://github.com/user-attachments/assets/7ad7ff0a-7867-4c48-8e9a-880a40cf6575)
 
 
 ## Tecnologías Utilizadas 📱
